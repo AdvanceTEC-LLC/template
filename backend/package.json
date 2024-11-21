@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "inventory backend",
   "main": "index.ts",
-  "type": "module",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node src/index.ts",
+    "start": "cross-env NODE_ENV=production ts-node src/index.ts",
     "dev": "cross-env NODE_ENV=development ts-node-dev src/index.ts",
     "test": "cross-env NODE_ENV=test vitest run",
-    "start:test": "cross-env NODE_ENV=test node src/index.ts",
+    "start:test": "cross-env NODE_ENV=test ts-node src/index.ts",
     "build:ui": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../backend",
     "lint": "eslint ."
   },
