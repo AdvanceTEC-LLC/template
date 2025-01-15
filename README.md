@@ -90,7 +90,7 @@ To start the development server:
 npm run dev
 ```
 
-This will run the app locally at http://localhost:3000 (by default).
+This will run the app locally at http://localhost:5173 (by default).
 
 3. **Build for Production:**
 
@@ -128,10 +128,10 @@ Before running the backend server, you need to set up environment variables.
 
 1. Create a `.env` File:
 
-Duplicate the provided `.env.example` file:
+Rename the provided `.env.example` file:
 
 ```bash
-cp .env.example .env
+mv .env.example .env
 ```
 
 2. Fill Out the Environment Variables:
@@ -283,7 +283,7 @@ rm -rf .git
 git init
 git add .
 git commit -m "Initial commit - based on template"
-git remote add origin https://github.com/matthewb-ATEC/your-new-project.git
+git remote add origin https://github.com/your-username/your-respository.git
 git push -u origin main
 ```
 
